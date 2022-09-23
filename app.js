@@ -87,7 +87,7 @@ app.get("/auth/google",
 
 );
 
-app.get("/auth/google/secrets",
+app.get("/auth/google/welcome",
   passport.authenticate("google", { failureRedirect: '/login' }),
   function (req, res) {
     // Successful authentication, redirect secrets.
